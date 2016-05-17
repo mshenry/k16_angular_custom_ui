@@ -14,9 +14,9 @@ Contents:&#13;
         <sys_class_name>sys_ui_macro</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-04-08 22:18:17</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_id>a2054927c3221200a8625ad551d3ae47</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>navigation_bar</sys_name>
         <sys_package display_value="K16 Incident Manager" source="sn_k16_im">ce99b4e3c3221200a8625ad551d3ae65</sys_package>
         <sys_policy/>
@@ -24,10 +24,22 @@ Contents:&#13;
         <sys_scope display_value="K16 Incident Manager">ce99b4e3c3221200a8625ad551d3ae65</sys_scope>
         <sys_update_name>sys_ui_macro_a2054927c3221200a8625ad551d3ae47</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-04-09 07:55:19</sys_updated_on>
+        <sys_updated_on>2016-05-17 21:46:53</sys_updated_on>
         <xml><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
 <j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
 
-</j:jelly>]]></xml>
+	<div class="col-md-8">
+		<h4>K16 Incident Manager</h4>
+    </div>
+                
+	<div class="col-md-4">
+		<input ng-model="model.searchValue" 
+			   ng-model-options="{debounce: { 'default': 500, 'blur': 0 }}" 
+			   placeholder="Search ..." 
+			   class="form-control col-md-8" />
+    </div>
+            
+</j:jelly>
+]]></xml>
     </sys_ui_macro>
 </record_update>

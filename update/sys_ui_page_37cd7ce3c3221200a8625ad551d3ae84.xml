@@ -34,19 +34,21 @@ Contents:&#13;
 		
 	<div ng-app="k16.incident_manager.app">
 		<div ng-controller="IncidentManagerCtrl">
-			<nav class="navbar navbar-default">
-						<div class="col-md-12">
-							<h4>K16 Incident Manager</h4>
-						</div>
-					</nav>
+			
+			<!-- The container and include for the navigation bar, which contains the header and search input -->
+			<nav ng-include="getTemplate('sn_k16_im_navigation_bar')" class="navbar navbar-default"/>
+
+			<!-- The list breadcrumb, containing text the current search term or 'All Incidents' if no search term exists -->
+			<div ng-include="getTemplate('sn_k16_im_breadcrumbs')" class="row"/>
 
 			<!-- The Incident list, displaying specific Incident information and dashboard, display Incident counts -->
 			<div class="row">
-				  <div class="col-md-12">
-						<div ng-include="getTemplate('sn_k16_im_incident_list')" class="col-md-8"/>
-					  <div ng-include="getTemplate('sn_k16_im_incident_dashboard')" class="col-md-4"/>
-						</div>    
+				<div class="col-md-12">
+					<div ng-include="getTemplate('sn_k16_im_incident_list')" class="col-md-8"/>
+					<div ng-include="getTemplate('sn_k16_im_incident_dashboard')" class="col-md-4"/>
+				</div>
 			</div>
+			
 		</div>
 	</div>
 </j:jelly>]]></html>
@@ -57,7 +59,7 @@ Contents:&#13;
         <sys_created_on>2016-04-08 21:46:35</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>37cd7ce3c3221200a8625ad551d3ae84</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name>incident_manager</sys_name>
         <sys_package display_value="K16 Incident Manager" source="sn_k16_im">ce99b4e3c3221200a8625ad551d3ae65</sys_package>
         <sys_policy/>
@@ -65,6 +67,6 @@ Contents:&#13;
         <sys_scope display_value="K16 Incident Manager">ce99b4e3c3221200a8625ad551d3ae65</sys_scope>
         <sys_update_name>sys_ui_page_37cd7ce3c3221200a8625ad551d3ae84</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-05-17 21:30:01</sys_updated_on>
+        <sys_updated_on>2016-05-17 21:48:02</sys_updated_on>
     </sys_ui_page>
 </record_update>
