@@ -28,10 +28,12 @@ Contents:&#13;
 
 	<g:requires name="sn_k16_im.angularjs-1.4.9.min.jsdbx"/>
 	<g:requires name="sn_k16_im.k16.incident_manager.app.jsdbx" params="cache=$[jvar_stamp]" />
-	<g:requires name="sn_k16_im.k16.incident_manager.ctlr.jsdbx" params="cache=$[jvar_stamp]" />
 	<g:requires name="sn_k16_im.k16.incident_manager.model.jsdbx" params="cache=$[jvar_stamp]" />
+	<g:requires name="sn_k16_im.k16.incident_manager.ctlr.jsdbx" params="cache=$[jvar_stamp]" />
+	<g:requires name="sn_k16_im.k16.chart.jsdbx" params="cache=$[jvar_stamp]" />
+	<g:requires name="sn_k16_im.k16.doughnut_chart.jsdbx" params="cache=$[jvar_stamp]" />
 	<g:requires name="sn_k16_im.k16.template_service.jsdbx" params="cache=$[jvar_stamp]" />
-		
+	
 	<div ng-app="k16.incident_manager.app">
 		<div ng-controller="IncidentManagerCtrl">
 			
@@ -59,7 +61,7 @@ Contents:&#13;
         <sys_created_on>2016-04-08 21:46:35</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>37cd7ce3c3221200a8625ad551d3ae84</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_name>incident_manager</sys_name>
         <sys_package display_value="K16 Incident Manager" source="sn_k16_im">ce99b4e3c3221200a8625ad551d3ae65</sys_package>
         <sys_policy/>
@@ -67,6 +69,6 @@ Contents:&#13;
         <sys_scope display_value="K16 Incident Manager">ce99b4e3c3221200a8625ad551d3ae65</sys_scope>
         <sys_update_name>sys_ui_page_37cd7ce3c3221200a8625ad551d3ae84</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-05-17 21:48:02</sys_updated_on>
+        <sys_updated_on>2016-05-17 22:12:15</sys_updated_on>
     </sys_ui_page>
 </record_update>
